@@ -8,4 +8,6 @@ urlpatterns = [
     # naming routes is optional, but best practices
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
+    # paths for cats
+    path('cats/', views.cats_index, name='index'),
 ]
