@@ -15,7 +15,7 @@
                 {% endif %}
                 <!-- <a href="/cats/{{ cat.id }}">View {{ cat.name}}</a> -->
                 <!-- django gives us a nice url structure for links -->
-                <a href="{{% url 'detail' cat.id %}}">View {{ cat.name}}</a>
+                <a href="{% url 'detail' cat.id %}">View {{ cat.name}}</a>
             </div>
         </div>
     {% endfor %}
